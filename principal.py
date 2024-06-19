@@ -18,6 +18,15 @@ class Jefe(Empleado):
         super().__init__(self, nom, apell, edad, sal, dni, fecha_vin)
         self.numEmple = nEmple
         
+class Area:
+    def _init_(self, nombre, descripcion):
+        self.nombre = nombre
+        self.descripcion = descripcion
+        self.empleados = []
+
+    def agregar_empleado(self, empleado):
+        self.empleados.append(empleado)    
+        
     
         
         
