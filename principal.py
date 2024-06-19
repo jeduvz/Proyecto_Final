@@ -27,7 +27,14 @@ class Area:
     def agregar_empleado(self, empleado):
         self.empleados.append(empleado)    
         
-    
+    def obtener_cantidad_empleados(self):
+        return len(self.empleados)
+
+    def obtener_empleados(self):
+        return self.empleados
+
+    def _str_(self):
+        return f"Área: {self.nombre}, Descripción: {self.descripcion}, Cantidad de Empleados: {len(self.empleados)}"
         
         
         
